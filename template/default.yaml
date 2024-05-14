@@ -1,0 +1,93 @@
+# Right now paths to the support directory do not get found:
+# This logo is hardcoded into the deck-title.html partial
+# As soon as the issue is fixed the hard logo can be removed
+# and this variable can be used instead
+# logos:
+#   - '/support/assets/tu-logo-light.svg'
+
+includeTULogo: true
+
+reveal:
+  backgroundTransition: "none"
+  center: false
+  controls: true
+  fragmentInURL: true
+  fragments: true
+  hash: true
+  help: true
+  hideCursorTime: 2000
+  hideInactiveCursor: true
+  history: false
+  keyboard: true
+  overview: false
+  pdfMaxPagesPerSlide: 10
+  pdfSeparateFragments: false
+  progress: true
+  slideNumber: true
+  touch: true
+  vertical-slides: true
+  transition: "none"
+  width: 1280
+  height: 720
+  viewDistance: 2
+  checkOverflow: false
+
+explain:
+  recWidth: 1920
+  recHeight: 1080
+  camWidth: 1280
+  camHeight: 720
+  useGreenScreen: false
+
+chart:
+  defaults:
+    font: {family: "Lato", size: 20 }
+    plugins:
+      title:
+        font: { weight: "normal", size: 30 }
+      legend:
+        position: "bottom"
+
+# show decker link on title slide
+showDeckerLink: true
+
+# progress bar on index page
+progress: true
+
+palette:
+  contrast: 0.40
+  colors:
+    light:
+      - "#ffffff"
+      - "#eeeeee"
+      - "#d6d6d6"
+      - "#8e908c"
+      - "#969896"
+      - "#4d4d4c"
+      - "#282a2e"
+      - "#1d1f21"
+      - "#c82829"
+      - "#f5871f"
+      - "#eab700"
+      - "#84B819"
+      - "#3e999f"
+      - "#2a9ddf"
+      - "#8959a8"
+      - "#a3685a"
+    dark:
+      - "#1d1f21"
+      - "#282a2e"
+      - "#373b41"
+      - "#969896"
+      - "#b4b7b4"
+      - "#c5c8c6"
+      - "#e0e0e0"
+      - "#ffffff"
+      - "#cc6666"
+      - "#de935f"
+      - "#f0c674"
+      - "#7da72a"
+      - "#8abeb7"
+      - "#81a2be"
+      - "#b294bb"
+      - "#a3685a"
