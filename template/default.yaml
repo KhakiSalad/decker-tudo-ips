@@ -25,10 +25,10 @@ reveal:
   progress: true
   slideNumber: true
   touch: true
-  vertical-slides: true
+  vertical-slides: false
   transition: "none"
-  width: 1280
-  height: 720
+  width: 1920
+  height: 1080
   viewDistance: 2
   checkOverflow: false
 
@@ -47,9 +47,6 @@ chart:
         font: { weight: "normal", size: 30 }
       legend:
         position: "bottom"
-
-# show decker link on title slide
-showDeckerLink: true
 
 # progress bar on index page
 progress: true

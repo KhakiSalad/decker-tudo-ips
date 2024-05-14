@@ -52,14 +52,22 @@ $endif$
 $deck-title.html()$
       $endif$      
 $body$
-
     </div>
   </div>
-  $if(watermark)$
-  <div class="watermark">
-    $watermark$
+
+  <div class="watermark" id="watermark" style="width:98%">
+      <div style="display:flex; flex-direction:row; align-items:center; justify-content: space-around; height:fit-content; border-top: solid var(--accent3) medium; padding-top:0.8em; font-size:large;padding-left:1em;padding-right:1em">
+        <div style="justify-self:center">
+          <img src="/support/assets/IPS-Logo_RGB_2023-01.svg" height="40px">
+        </div>
+        <div>
+          Institut für Produktionssysteme | Univ.-Prof. Dr.-Ing. Jochen Deuse 
+        </div>
+        <div style="padding-left:-5em">
+          $date$
+        </div>
+      </div>
   </div>
-  $endif$
 
   <script src="$decker-support-dir$/vendor/videojs/video.min.js"></script>
   <script src="$decker-support-dir$/vendor/chartjs/chart.umd.js"></script>
@@ -81,5 +89,21 @@ $for(template.deck.js-module)$
   <script module src="$template.deck.js$"></script>
 $endfor$
 
+
+<script type="module">
+  import Reveal from './$decker-support-dir$/vendor/reveal/dist/reveal.esm.js';
+  Reveal.on('slidechanged', event => {
+    console.log(event.indexh)
+    if(event.indexh === 0){
+      document.getElementById("watermark").style.display = "none";
+    }else{
+      document.getElementById("watermark").style.display = "block";
+    }
+
+  });
+  Reveal.addEventListener('title', function() {  
+      document.getElementById("watermark").style.display = "none";
+  } );
+</script>
 </body>
 </html>

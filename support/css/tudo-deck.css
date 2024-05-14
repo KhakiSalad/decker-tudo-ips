@@ -1618,3 +1618,7 @@ html.a11y .reveal a:hover {
   color: var(--accent6-bbg);
   transform: scale(1.05);
 }
+
+.watermark {
+  width: 100%;
+}
